@@ -59,7 +59,7 @@ VITE_OPENAI_API_KEY=your_api_key_here
 npm run dev
 
 **## 📸 Demo**
-![PollyGlot Translator Demo] - (assets/demo1.png) - (assets/demo2.png)
+![PollyGlot Translator Demo] - (assets/demopollpart1.png) - (assets/pollypart2.png)
 
 
 **🎯 Purpose**
