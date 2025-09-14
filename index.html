@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PollyGlot</title>
+
+  <!-- Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="brand">
+      <img class="logo" src="./assets/parrot.png" alt="PollyGlot parrot" />
+      <div class="brand-text">
+        <h1>PollyGlot</h1>
+        <p>Perfect Translation Every Time</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    
+    <section class="card" id="view-input">
+      <div class="card__inner">
+        <h3 class="label">Text to translate 👇</h3>
+
+        
+        <input
+          id="sourceText"
+          class="textbox textbox--input"
+          type="text"
+          placeholder="How are you?"
+          autocomplete="off"
+        />
+
+        <div class="lang-group">
+          <h3 class="label mt">Select language 👇</h3>
+          <ul class="radio-list">
+            <li>
+              <label>
+                <input type="radio" name="lang" value="fr" checked />
+                <span>French</span>
+                <img src="./assets/fr-flag.png" alt="France flag" />
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="lang" value="es" />
+                <span>Spanish</span>
+                <img src="./assets/sp-flag.png" alt="Spain flag" />
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="lang" value="jp" />
+                <span>Japanese</span>
+                <img src="./assets/jpn-flag.png" alt="Japan flag" />
+              </label>
+            </li>
+          </ul>
+
+          <button id="translateBtn" class="btn btn--primary" type="button">Translate</button>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="card" id="view-result" hidden>
+      <div class="card__inner">
+        <h3 class="label">Original text 👇</h3>
+        <textarea id="origText" class="textbox textbox--area" readonly></textarea>
+
+        <h3 class="label mt">Your translation 👇</h3>
+        <textarea id="translatedText" class="textbox textbox--area" readonly></textarea>
+
+        <button id="startOverBtn" class="btn btn--primary" type="button">Start Over</button>
+      </div>
+    </section>
+  </main>
+
+  
+ <script type="module" src="index.js"></script> 
+</body>
+</html>

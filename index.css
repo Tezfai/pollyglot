@@ -1,0 +1,145 @@
+:root{
+  --navy:#0c1f35;
+  --navy-2:#102846;
+  --blue:#0e5aad;
+  --green:#23c14d;
+  --ink:#0e1525;
+  --border:#d6dee9;
+  --card:#ffffff;
+  --radius:16px;
+}
+
+*{ box-sizing:border-box; }
+html,body{
+  margin:0;
+  font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  color:var(--ink);
+  background:#f4f6fb;
+}
+
+/* hide via [hidden] or .hidden class */
+[hidden]{ display:none !important; }
+.hidden{ display:none !important; }
+
+/* ---------- HERO ---------- */
+.hero{
+  background: var(--navy) url("./assets/worldmap.png") no-repeat;
+  background-size: cover;
+  background-position: right 12% center; /* push dots to the right like mock */
+  padding: 12px 16px;
+  min-height: 92px;
+}
+.brand{
+  max-width: 420px;
+  margin: 0 auto;
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.logo{ width:64px; height:auto; display:block; }
+.brand-text{ line-height:1.1; }
+.brand-text h1{
+  margin:0;
+  color:var(--green);
+  font-weight:800;
+  font-size:1.9rem;
+  letter-spacing:-0.2px;
+}
+.brand-text p{
+  margin:2px 0 0 0;
+  color:#eaf2ff;
+  font-weight:600;
+  font-size:.92rem;
+}
+
+/* ---------- LAYOUT ---------- */
+.wrap{
+  max-width:420px;
+  margin:16px auto 28px;
+  padding:0 12px;
+}
+
+/* ---------- CARD ---------- */
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  box-shadow:0 6px 18px rgba(16,40,70,.08);
+}
+.card__inner{
+  margin:10px;
+  padding:18px 16px 20px;
+  border:3px solid var(--navy-2);
+  border-radius:12px;
+}
+
+/* ---------- HEADINGS / LABELS ---------- */
+.label{
+  margin:0 0 10px 0;
+  color:var(--blue);
+  font-weight:700;
+  font-size:1.05rem;
+  text-align:center;
+}
+.mt{ margin-top:16px; }
+
+/* ---------- TEXT FIELDS ---------- */
+.textbox{
+  width:100%;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:#eef2f7;
+  padding:14px 16px;
+  font:500 .95rem/1.4 "Poppins",system-ui,sans-serif;
+  color:var(--ink);
+  outline:none;
+}
+.textbox:focus{
+  border-color:var(--blue);
+  box-shadow:0 0 0 3px rgba(14,90,173,.15);
+}
+
+.textbox--input{           
+  height:56px;
+  line-height:56px;        
+}
+
+.textbox--area{
+  min-height:115px;
+  resize:vertical;
+}
+
+/* ---------- LANGUAGE GROUP ---------- */
+.lang-group{ display:grid; gap:12px; }
+
+.radio-list{
+  list-style:none;
+  padding:0;
+  margin:0 0 2px 0;
+  display:grid;
+  gap:10px;
+}
+.radio-list label{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  font-weight:700;
+  cursor:pointer;
+}
+.radio-list img{ width:22px; height:auto; }
+
+/* ---------- BUTTON ---------- */
+.btn{
+  width:100%;
+  border:none;
+  border-radius:12px;
+  padding:14px 16px;
+  font-weight:800;
+  font-size:1.05rem;
+  cursor:pointer;
+}
+.btn--primary{
+  background:#0e5aad;
+  color:#fff;
+}
+.btn--primary:hover{ filter:brightness(1.05); }
