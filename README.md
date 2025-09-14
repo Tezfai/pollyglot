@@ -24,8 +24,11 @@ pollyglot/
 │── README.md         # Documentation
 
 ⚙️ Setup & Installation
+
 -clone repo
+
 git clone https://github.com/Tezfai/pollyglot.git
+
 cd pollyglot
 
 -Install dependencies:
