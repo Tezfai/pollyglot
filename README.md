@@ -58,7 +58,10 @@ VITE_OPENAI_API_KEY=your_api_key_here
 
 npm run dev
 
+
+
 **## 📸 Demo**
+
 ![PollyGlot – Screen 1](assets/demopollpart1.png)
 ![PollyGlot – Screen 2](assets/pollypart2.png)
 
