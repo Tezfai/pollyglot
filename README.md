@@ -10,9 +10,13 @@ Uses OpenAI’s API to generate high-quality translations.
 Modular, front-end focused project (HTML, CSS, JavaScript).
 
 🛠 Tech Stack
+
 Frontend: HTML, CSS, JavaScript
+
 Build Tool: Vite
+
 API: OpenAI API
+
 
 pollyglot/
 │── assets/           # Static files (icons, images, etc.)
@@ -32,14 +36,19 @@ git clone https://github.com/Tezfai/pollyglot.git
 cd pollyglot
 
 -Install dependencies:
+
 npm install
 
 Add your OpenAI API key:
+
 Create a .env file in the root directory
+
 Add:
+
 VITE_OPENAI_API_KEY=your_api_key_here
 
 Start the development server:
+
 npm run dev
 
 ## 📸 Demo
